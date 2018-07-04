@@ -1,15 +1,16 @@
-import argparse
-from datetime import datetime
-import json
 import os
 
 from pprintpp import pprint as pp
 import requests
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--entry')
-parser.add_argument('--lexicalCategory')
-args = parser.parse_args()
+
+class Args:
+    def __init__(self, *args):
+        for arg in args:
+            setattr(self, arg, os.getenv(arg, ''))
+
+
+args = Args('entry', 'lexicalCategory')
 
 
 class Oxford:
@@ -20,7 +21,6 @@ class Oxford:
             'app_key': os.getenv('KEY'),
         }
         self.lang = lang
-
 
     def get(self, path, **params):
         return requests.get(
@@ -35,7 +35,7 @@ class Oxford:
     def entry(self, q):
         r = self.get(f'entries/{self.lang}/{q}/translations=en')
 
-        with open(os.path.join('entries', q + '.json'), 'w') as f:
+        with open(os.path.join('cache', 'entries', q + '.json'), 'w') as f:
             f.write(r.text)
 
         return r

@@ -8,6 +8,7 @@ requests = "*"
 ipython = "*"
 pprintpp = "*"
 toml = "*"
+pudb = "*"
 
 [dev-packages]
 

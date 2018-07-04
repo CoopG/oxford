@@ -1,2 +1,6 @@
+# keys
 .env
+.*.sh
+
+# cache
 cache/*
