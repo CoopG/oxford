@@ -9,6 +9,7 @@ ipython = "*"
 pprintpp = "*"
 toml = "*"
 pudb = "*"
+"psycopg2" = "*"
 
 [dev-packages]
 
