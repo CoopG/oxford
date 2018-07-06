@@ -2,8 +2,5 @@
 .env
 .*.sh
 
-# cache
-cache/*
-
 # python
 __pycache__/*

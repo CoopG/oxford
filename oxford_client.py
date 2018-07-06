@@ -1,10 +1,10 @@
-from datetime import datetime
 import os
 
-from pprintpp import pprint as pp
 import requests
 
-from psql import PostgresClient
+from models import Entry
+from postgres import PostgresClient
+
 
 class OxfordClient:
     def __init__(self, lang='de'):
@@ -14,6 +14,8 @@ class OxfordClient:
             'app_key': os.getenv('KEY'),
         }
         self.lang = lang
+
+        self.postgres_client = PostgresClient()
 
     def get(self, path, **params):
         response = requests.get(
@@ -39,10 +41,11 @@ class OxfordClient:
             q = input()
         response = self.get(f'entries/{self.lang}/{q}/translations=en')
 
-        with open(os.path.join('cache', 'entries', q + '.json'), 'w') as f:
-            f.write(response.text)
-
         data = response.json()
+
+        entry = Entry(q, response.text)
+
+        self.postgres_client.save(entry)
 
         if output:
             print(data)
