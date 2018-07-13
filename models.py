@@ -16,3 +16,6 @@ class Entry:
         self.word = word
         self.data = data
         self.ts = datetime.now()
+
+    def pprint(self):
+        print(self.word, self.data)

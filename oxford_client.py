@@ -3,7 +3,6 @@ import os
 import requests
 
 from models import Entry
-from postgres import PostgresClient
 
 
 class OxfordClient:
@@ -13,15 +12,22 @@ class OxfordClient:
             'app_id': os.getenv('ID'),
             'app_key': os.getenv('KEY'),
         }
+        self.django_url = os.getenv('DJANGO_URL')
         self.lang = lang
-
-        self.postgres_client = PostgresClient()
 
     def get(self, path, **params):
         response = requests.get(
-            f'{self.base_url}/{path}',
+            f'{self.base_url}{path}',
             params=params,
-            headers=self.headers
+            headers=self.headers,
+        )
+
+        return response
+
+    def post(self, json):
+        response = requests.post(
+            f'{self.django_url}entry/',
+            json=json,
         )
 
         return response
@@ -43,11 +49,14 @@ class OxfordClient:
 
         data = response.json()
 
-        entry = Entry(q, response.text)
-
-        self.postgres_client.save(entry)
+        entry = Entry(q, data)
 
         if output:
-            print(data)
+            entry.pprint()
+
+        self.post({
+            'name': q,
+            'data': data,
+        })
 
         return data

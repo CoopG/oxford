@@ -2,7 +2,7 @@
 PROJ_DIR=$(pwd)
 VENV_DIR=$(pipenv --venv)
 
-for var in URL ID KEY; do
+for var in URL ID KEY DJANGO_URL; do
   if ! [[ -v $var ]];
   then
     echo "Please enter the Application $var"
@@ -19,6 +19,7 @@ source $VENV_DIR/bin/activate
 export URL=$URL
 export ID=$ID
 export KEY=$KEY
+export DJANGO_URL=$DJANGO_URL
 
 # args
 export entry=\$1
