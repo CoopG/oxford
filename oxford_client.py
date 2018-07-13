@@ -14,6 +14,7 @@ class OxfordClient:
         }
         self.django_url = os.getenv('DJANGO_URL')
         self.lang = lang
+        self.responses = []
 
     def get(self, path, **params):
         response = requests.get(
@@ -21,6 +22,8 @@ class OxfordClient:
             params=params,
             headers=self.headers,
         )
+
+        self.responses.append(response)
 
         return response
 
