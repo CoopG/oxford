@@ -2,7 +2,7 @@ import os
 
 import requests
 
-from models import Entry
+from renderers import Entry, Search
 
 
 class OxfordClient:
@@ -41,8 +41,10 @@ class OxfordClient:
         if response.status_code == 200:
             data = response.json()
 
+            search = Search(q, data)
+
             if output:
-                print(data)
+                search.pprint()
 
             return data
 
@@ -61,7 +63,7 @@ class OxfordClient:
             entry = Entry(q, data)
 
             if output:
-                entry.pprint()
+                print(entry)
 
             self.post({
                 'name': q,
