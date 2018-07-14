@@ -1,0 +1,30 @@
+import os
+
+from IPython.core import magic
+
+from oxford_client import OxfordClient
+
+
+class Args:
+    def __init__(self, *args):
+        for arg in args:
+            setattr(self, arg, os.getenv(arg, ''))
+
+
+args = Args('entry', 'lexicalCategory')
+
+ox = OxfordClient()
+
+
+@magic.magics_class
+class OxfordClientMagics(magic.Magics):
+    @magic.line_magic
+    def e(self, line):
+        ox.entry(line)
+
+
+ip = get_ipython()
+ip.register_magics(OxfordClientMagics)
+
+if args.entry:
+    response = ox.entry(args.entry)

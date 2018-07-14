@@ -25,7 +25,7 @@ export DJANGO_URL=$DJANGO_URL
 export entry=\$1
 export lexicalCategory=\$2
 
-ipython -i oxford.py
+ipython -i oxford.ipy
 EOF
 
 chmod u=rwx .de.sh
