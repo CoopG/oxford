@@ -11,9 +11,8 @@ class Args:
 
 args = Args('entry', 'lexicalCategory')
 
-
 ox = OxfordClient()
+e = ox.entry
 
 if args.entry:
-    e = ox.entry
     response = e(args.entry)
