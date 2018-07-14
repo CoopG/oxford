@@ -38,28 +38,31 @@ class OxfordClient:
     def search(self, q=None, output=True):
         response = self.get(f'search/{self.lang}/translations=en', q=q)
 
-        data = response.json()
+        if response.status_code == 200:
+            data = response.json()
 
-        if output:
-            print(data)
+            if output:
+                print(data)
 
-        return data
+            return data
 
     def entry(self, q=None, output=True):
         if q is None:
             q = input()
+
         response = self.get(f'entries/{self.lang}/{q}/translations=en')
 
-        data = response.json()
+        if response.status_code == 200:
+            data = response.json()
 
-        entry = Entry(q, data)
+            entry = Entry(q, data)
 
-        if output:
-            entry.pprint()
+            if output:
+                entry.pprint()
 
-        self.post({
-            'name': q,
-            'data': data,
-        })
+            self.post({
+                'name': q,
+                'data': data,
+            })
 
-        return data
+            return data
