@@ -74,7 +74,11 @@ class LexicalEntry:
 
                 for example in sense.get('examples', []):
                     de = example['text']
-                    en = ' '.join(map(itemgetter('text'), example['translations']))
+                    try:
+                        trans = example['translations']
+                    except KeyError:
+                        continue
+                    en = trans[0]['text']
                     examples.append((de, en))
 
         self.lex_cat = Word(data['text'], data['lexicalCategory'], gram_feats)
