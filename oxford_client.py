@@ -52,7 +52,10 @@ class OxfordClient:
 
         response = self.get(f'entries/{self.lang}/{q}/translations=en')
 
-        if response.status_code == 200:
+        if response.status_code == 404:
+            self.search(q)
+
+        elif response.status_code == 200:
             data = response.json()
 
             entry = Entry(q, data)
