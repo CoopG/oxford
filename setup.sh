@@ -25,7 +25,6 @@ export DJANGO_PASS=$DJANGO_PASS
 
 # args
 export entry=\$1
-export lexicalCategory=\$2
 
 ipython -i oxford.ipy
 EOF
