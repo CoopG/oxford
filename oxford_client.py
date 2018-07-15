@@ -1,7 +1,8 @@
+from collections import defaultdict
 import os
 
 import requests
-
+from django_client import DjangoClient
 from renderers import Entry, Search
 
 
@@ -12,9 +13,9 @@ class OxfordClient:
             'app_id': os.getenv('ID'),
             'app_key': os.getenv('KEY'),
         }
-        self.django_url = os.getenv('DJANGO_URL')
+        self.django = DjangoClient()
         self.lang = lang
-        self.responses = []
+        self.cache = defaultdict(list)
 
     def get(self, path, **params):
         response = requests.get(
@@ -23,15 +24,7 @@ class OxfordClient:
             headers=self.headers,
         )
 
-        self.responses.append(response)
-
-        return response
-
-    def post(self, json):
-        response = requests.post(
-            f'{self.django_url}entry/',
-            json=json,
-        )
+        self.cache['response'].append(response)
 
         return response
 
@@ -41,12 +34,12 @@ class OxfordClient:
         if response.status_code == 200:
             data = response.json()
 
-            search = Search(q, data)
+            search = Search(data)
 
             if output:
-                search.pprint()
+                print(search)
 
-            return data
+            self.cache['search'].append(search)
 
     def entry(self, q=None, output=True):
         if q is None:
@@ -60,14 +53,16 @@ class OxfordClient:
         elif response.status_code == 200:
             data = response.json()
 
-            entry = Entry(q, data)
+            entry = Entry(data)
 
             if output:
                 print(entry)
 
-            self.post({
+            self.cache['entry'].append(entry)
+
+            django_response = self.django.post({
                 'name': q,
                 'data': data,
             })
 
-            return data
+            self.cache['django_response'].append(django_response)
