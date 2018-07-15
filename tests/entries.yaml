@@ -1,0 +1,595 @@
+metadata: {provider: Oxford University Press}
+results:
+- id: pr%C3%BCfung
+  language: de
+  lexicalEntries:
+  - entries:
+    - grammaticalFeatures:
+      - {text: Feminine, type: Gender}
+      - {text: Genitive, type: Case}
+      homographNumber: '000'
+      senses:
+      - examples:
+        - text: "eine Pr\xFCfung machen od. ablegen"
+          translations:
+          - {language: en, text: take or do an examination}
+        id: b-de-en0032944.002
+        notes:
+        - {text: Examen, type: indicator}
+        translations:
+        - {language: en, text: examination}
+        - language: en
+          registers: [colloquial]
+          text: exam
+      - crossReferences:
+        - {id: pr%C3%BCfen, text: "pr\xFCfen", type: related}
+        - {id: pr%C3%BCfen, text: "pr\xFCfen", type: related}
+        examples:
+        - text: "nach nochmaliger Pr\xFCfung Ihres Antrags"
+          translations:
+          - {language: en, text: on reconsidering your application}
+        - text: "nach/bei Pr\xFCfung Ihrer Beschwerde"
+          translations:
+          - {language: en, text: after/on examining or investigating your complaint}
+        - text: "klinische Pr\xFCfungen"
+          translations:
+          - {language: en, text: clinical trials}
+        id: b-de-en0032944.003
+        notes:
+        - {text: "das [\xDCber]pr\xFCfen", type: indicator}
+        translations:
+        - {language: en, text: examination}
+        - {language: en, text: investigation}
+        - {language: en, text: inspection}
+        - language: en
+          notes:
+          - {text: Kontrolle, type: indicator}
+          text: check
+        - language: en
+          notes:
+          - {text: das Kontrollieren, type: indicator}
+          - {text: no indef. art., type: grammaticalNote}
+          text: checking
+        - language: en
+          notes:
+          - {text: Test, type: indicator}
+          text: test
+        - language: en
+          notes:
+          - {text: das Testen, type: indicator}
+          - {text: no indef. art., type: grammaticalNote}
+          text: testing
+      - id: b-de-en0032944.004
+        notes:
+        - {text: schicksalhafte Belastung, type: indicator}
+        registers: [formal]
+        translations:
+        - {language: en, text: trial}
+    language: de
+    lexicalCategory: Noun
+    text: "Pr\xFCfung"
+  type: headword
+  word: "Pr\xFCfung"
+---
+metadata: {provider: Oxford University Press}
+results:
+- id: sein
+  language: de
+  lexicalEntries:
+  - entries:
+    - grammaticalFeatures:
+      - {text: Intransitive, type: Subcategorization}
+      homographNumber: '100'
+      notes:
+      - {text: irregular, type: grammaticalNote}
+      senses:
+      - examples:
+        - text: "wie ist es mit dir, m\xF6chtest du ein Glas Gl\xFChwein?"
+          translations:
+          - {language: en, text: 'how about you, would you like a glass of mulled
+              wine?'}
+        - text: "das w\xE4rs"
+          translations:
+          - {language: en, text: that's that}
+          - language: en
+            registers: [colloquial]
+            text: that's it
+          - language: en
+            notes:
+            - {text: beim Einkaufen, type: indicator}
+            text: that's all
+        - text: wie ist das Wetter?
+          translations:
+          - {language: en, text: 'what is the weather like?'}
+        - registers: [colloquial]
+          text: nichts sein
+          translations:
+          - {language: en, text: be a nothing or a nonentity}
+        - text: er ist Schwede/Lehrer
+          translations:
+          - {language: en, text: he is Swedish or a Swede/a teacher}
+        - text: was ist er [von Beruf]?
+          translations:
+          - {language: en, text: 'what does he do [for a living]?'}
+        - text: "wenn ich du w\xE4re \u2026"
+          translations:
+          - {language: en, text: "if I were you \u2026"}
+        - text: "das w\xE4ren neun Euro"
+          translations:
+          - {language: en, text: that will be nine euros}
+        - text: wie ist der Wein?
+          translations:
+          - {language: en, text: 'how is the wine?'}
+        - text: "wie w\xE4re es mit einem Schnaps?"
+          translations:
+          - {language: en, text: 'how about a schnaps?'}
+        - text: "seien Sie bitte so freundlich und geben Sie mir \u2026"
+          translations:
+          - {language: en, text: "[would you] be so kind as to give me \u2026"}
+        - text: bist du es?
+          translations:
+          - {language: en, text: 'is that you?'}
+        - text: das Buch ist meins od. (ugs.) mir
+          translations:
+          - {language: en, text: the book is mine}
+        - text: "und das w\xE4re?"
+          translations:
+          - {language: en, text: 'and what might or would that be?'}
+        - text: wer (ugs.) od. jemand sein
+          translations:
+          - {language: en, text: be somebody}
+        - text: x sei 4
+          translations:
+          - {language: en, text: let x be 4}
+        - text: ist das kalt heute!
+          translations:
+          - {language: en, text: it's so cold today}
+        - text: nun, wie ist es, gehst du mit oder nicht?
+          translations:
+          - {language: en, text: 'well, what about it? are you going too, or not?'}
+        - text: "die Sache ist die: \u2026"
+          translations:
+          - {language: en, text: "it's like this: \u2026"}
+        - registers: [formal]
+          text: wie dem auch sei, sei es, wie es wolle
+          translations:
+          - {language: en, text: be that as it may}
+        - text: keiner will es gewesen sein
+          translations:
+          - {language: en, text: no one will admit it was him}
+        - text: Karl wars
+          translations:
+          - language: en
+            notes:
+            - {text: ist verantwortlich, type: indicator}
+            text: it was Karl [who did/said etc. it]
+        - text: "Everton ist Fu\xDFballmeister"
+          translations:
+          - {language: en, text: Everton are football champions}
+        - text: wie war das noch mit dem Scheck?
+          translations:
+          - {language: en, text: 'what was that again about a cheque?'}
+        - text: "hier w\xE4ren wir"
+          translations:
+          - {language: en, text: here we are}
+        id: b-de-en0037324.002
+        translations:
+        - {language: en, text: be}
+      - examples:
+        - text: ist dir etwas?
+          translations:
+          - {language: en, text: 'are you all right?'}
+          - {language: en, text: 'is something the matter?'}
+        - text: "jmdm. ist, als [ob] \u2026"
+          translations:
+          - {language: en, text: "sb feels as if \u2026"}
+          - language: en
+            notes:
+            - {text: 'jmd. hat den Eindruck [als]', type: indicator}
+            text: "sb has a feeling that \u2026"
+        - text: mir ist schlecht
+          translations:
+          - {language: en, text: I feel sick}
+        - registers: [colloquial]
+          text: mir ist nicht nach Scherzen
+          translations:
+          - {language: en, text: I'm not in a mood for joking}
+        - registers: [colloquial]
+          text: jmdm. ist nach etw.
+          translations:
+          - {language: en, text: sb feels like or fancies sth}
+        - text: mir ist kalt/besser
+          translations:
+          - {language: en, text: I am or feel cold/better}
+        id: b-de-en0037324.003
+        notes:
+        - {text: unpers., type: grammaticalNote}
+      - examples:
+        - text: drei und vier ist od. (ugs.) sind sieben
+          translations:
+          - {language: en, text: three and four is or makes seven}
+        id: b-de-en0037324.004
+        notes:
+        - {text: ergeben, type: indicator}
+        translations:
+        - {language: en, text: be}
+        - {language: en, text: make}
+      - examples:
+        - text: es ist drei Uhr/Mai/Winter
+          translations:
+          - {language: en, text: it is three o'clock/May/winter}
+        id: b-de-en0037324.005
+        notes:
+        - {text: bei Zeitangabe, type: indicator}
+        - {text: unpers., type: grammaticalNote}
+        translations:
+        - {language: en, text: be}
+      - examples:
+        - text: morgen bin ich zu Hause
+          translations:
+          - {language: en, text: 'I shall be [at] home tomorrow'}
+        - text: ist noch Bier im Haus?
+          translations:
+          - {language: en, text: 'is there any more beer in the house?'}
+        - text: bist du schon mal bei Eva gewesen?
+          translations:
+          - {language: en, text: 'have you ever been to Eva''s?'}
+        - text: wo warst du so lange?
+          translations:
+          - {language: en, text: 'where have you been all this time?'}
+        id: b-de-en0037324.006
+        notes:
+        - {text: sich befinden, type: indicator}
+        translations:
+        - {language: en, text: be}
+      - examples:
+        - text: er ist aus Berlin
+          translations:
+          - {language: en, text: he is or comes from Berlin}
+        id: b-de-en0037324.007
+        notes:
+        - {text: stammen, type: indicator}
+        translations:
+        - {language: en, text: be}
+        - {language: en, text: come}
+      - examples:
+        - text: muss das sein?
+          translations:
+          - {language: en, text: 'is that really necessary?'}
+        - text: was sein muss, muss sein
+          translations:
+          - {language: en, text: 'what must be, must be'}
+        - registers: [formal]
+          text: "sei es \u2026, sei es \u2026"
+          translations:
+          - {language: en, text: "whether \u2026 or \u2026"}
+        - text: seis drum!
+          translations:
+          - {language: en, text: all right!}
+        - text: es war an einem Sonntag im April
+          translations:
+          - {language: en, text: it was on a Sunday in April}
+        - registers: [formal, archaic]
+          text: es hat nicht sollen sein
+          translations:
+          - {language: en, text: it was not meant to be}
+        - registers: [colloquial]
+          text: wenn etwas ist, ruf mich an
+          translations:
+          - {language: en, text: 'if anything comes up, give me a ring'}
+        - text: "war etwas w\xE4hrend meiner Abwesenheit?"
+          translations:
+          - {language: en, text: 'did anything happen during my absence?'}
+        - text: das kann schon sein
+          translations:
+          - {language: en, text: that may well be}
+        - text: es sei!
+          translations:
+          - {language: en, text: so be it}
+        - text: das kann doch nicht sein!
+          translations:
+          - {language: en, text: that's just not possible!}
+        - text: was darf es sein?
+          translations:
+          - language: en
+            notes:
+            - {text: "im Gesch\xE4ft", type: indicator}
+            text: what can I get you?
+        id: b-de-en0037324.008
+        translations:
+        - language: en
+          notes:
+          - {text: stattfinden, type: indicator}
+          text: be
+        - language: en
+          notes:
+          - {text: sich ereignen, type: indicator}
+          text: be
+        - {language: en, text: happen}
+      - examples:
+        - registers: [colloquial]
+          text: ist was?
+          translations:
+          - {language: en, text: 'is anything wrong or the matter?'}
+        - text: was nicht ist, kann noch werden
+          translations:
+          - {language: en, text: things can always change}
+        - text: "sie taten, als ob nichts w\xE4re"
+          translations:
+          - {language: en, text: they acted as if nothing had happened}
+        - text: es ist keine Hoffnung mehr
+          translations:
+          - {language: en, text: 'there is no hope [left]'}
+        - text: das war einmal
+          translations:
+          - {language: en, text: that's all past now}
+        - text: es war einmal ein Prinz
+          translations:
+          - {language: en, text: once upon a time there was a prince}
+        - text: "wenn du nicht gewesen w\xE4rest"
+          translations:
+          - {language: en, text: if it hadn't been for you}
+        - registers: [euphemistic]
+          text: er ist nicht mehr
+          translations:
+          - {language: en, text: he is no longer with us}
+        id: b-de-en0037324.009
+        notes:
+        - {text: existieren, type: indicator}
+        translations:
+        - {language: en, text: be}
+        - {language: en, text: exist}
+      - crossReferences:
+        - {id: seinlassen, text: seinlassen, type: related}
+        examples:
+        - registers: [colloquial]
+          text: etw. sein lassen
+          translations:
+          - language: en
+            notes:
+            - {text: in Ruhe lassen, type: indicator}
+            text: leave sth alone
+        - registers: [colloquial]
+          text: jmdn. sein lassen
+          translations:
+          - language: en
+            registers: [colloquial]
+            text: leave sb be
+          - language: en
+            notes:
+            - {text: in Ruhe lassen, type: indicator}
+            text: leave sb alone
+        - text: lassen wir die Idee/das Ganze lieber sein!
+          translations:
+          - {language: en, text: let's drop the idea/the whole thing}
+        - text: etw. sein lassen
+          translations:
+          - {language: en, text: stop sth}
+        id: b-de-en0037324.010
+        registers: [colloquial]
+    - grammaticalFeatures:
+      - {text: Auxiliary, type: Verb}
+      homographNumber: '101'
+      senses:
+      - examples:
+        - notes:
+          - {text: "\u2026 werden k\xF6nnen", type: indicator}
+          text: es ist niemand zu sehen
+          translations:
+          - {language: en, text: there's no one to be seen}
+        - text: das war zu erwarten
+          translations:
+          - {language: en, text: that was to be expected}
+        - text: mit ihm ist zu reden
+          translations:
+          - {language: en, text: he's quite approachable}
+        - text: es ist zu verkaufen
+          translations:
+          - {language: en, text: it is for sale}
+        - text: die Schmerzen sind kaum zu ertragen
+          translations:
+          - {language: en, text: the pain is hardly bearable}
+        id: b-de-en0037324.012
+      - examples:
+        - text: die Richtlinien sind strengstens zu beachten
+          translations:
+          - {language: en, text: the guidelines are to be strictly followed}
+        - notes:
+          - {text: "\u2026 werden m\xFCssen", type: indicator}
+          text: "das Bemalen der W\xE4nde ist zu unterlassen"
+          translations:
+          - {language: en, text: painting on the walls is prohibited}
+        id: b-de-en0037324.013
+      - examples:
+        - registers: [colloquial]
+          text: gestern bin ich gleich von der Arbeit nach Hause
+          translations:
+          - {language: en, text: I went straight home from work yesterday}
+        - registers: [colloquial]
+          text: die Kinder sind spielen
+          translations:
+          - {language: en, text: the children have gone off to play}
+        - text: er ist gestorben
+          translations:
+          - {language: en, text: he has died}
+        - registers: [colloquial]
+          text: sie sind gerade mit dem Wagen in die Stadt
+          translations:
+          - {language: en, text: they've just driven off into town}
+        id: b-de-en0037324.014
+        notes:
+        - {text: zur Perfektumschreibung, type: indicator}
+        translations:
+        - {language: en, text: have}
+      - examples:
+        - text: wir waren gerettet
+          translations:
+          - {language: en, text: we were saved}
+        id: b-de-en0037324.015
+        notes:
+        - {text: zur Bildung des Zustandspassivs, type: indicator}
+        translations:
+        - {language: en, text: be}
+    language: de
+    lexicalCategory: Verb
+    text: sein
+  - entries:
+    - grammaticalFeatures:
+      - {text: Possessive, type: Referential}
+      homographNumber: '200'
+      senses:
+      - crossReferences:
+        - {id: man, text: man, type: related}
+        examples:
+        - registers: [colloquial]
+          text: er trinkt am Tag seine acht Tassen Kaffee
+          translations:
+          - {language: en, text: he regularly drinks eight cups of coffee a day}
+        - registers: [slang]
+          text: dem Willi sein Hund
+          translations:
+          - {language: en, text: his}
+          - {language: en, text: Willi's dog}
+        - registers: [formal]
+          text: die seinen od. Seinen
+          translations:
+          - {language: en, text: his family}
+        - text: "wenn man sich (Dat.) seiner eigenen Unzul\xE4nglichkeit bewusst ist"
+          translations:
+          - {language: en, text: when you're aware of your own inadequacy}
+          - {language: en, text: when one is aware of one's own inadequacy}
+        - text: jedem das seine od. Seine
+          translations:
+          - language: en
+            notes:
+            - {text: jeder nach seinem Geschmack, type: indicator}
+            text: each to his own
+          - {language: en, text: to each his own}
+        - text: den seinen od. Seinen gibts der Herr im Schlaf
+          translations:
+          - {language: en, text: some people have all the luck}
+        - text: jeder hat seine Sorgen
+          translations:
+          - {language: en, text: everyone has his troubles}
+          - language: en
+            registers: [colloquial]
+            text: everyone has their troubles
+        - registers: [colloquial]
+          text: das hat seine zwei Millionen gekostet
+          translations:
+          - {language: en, text: it cost a good two million}
+        - text: er hat das seine od. Seine getan
+          translations:
+          - language: en
+            registers: [colloquial]
+            text: he has done his bit
+          - language: en
+            notes:
+            - {text: sein Teil, type: indicator}
+            text: he has done his part
+          - language: en
+            notes:
+            - {text: was er konnte, type: indicator}
+            text: he has done what or all he could
+        - text: das seine od. Seine
+          translations:
+          - language: en
+            notes:
+            - {text: Eigentum, type: indicator}
+            text: what is his
+        - registers: [formal]
+          text: der/die/das seine
+          translations:
+          - {language: en, text: his}
+        - registers: [archaic]
+          text: die seine od. Seine
+          translations:
+          - {language: en, text: his wife}
+        - registers: [formal, archaic]
+          text: endlich war sie Sein
+          translations:
+          - {language: en, text: at last she was his}
+        id: b-de-en0037325.002
+        translations:
+        - language: en
+          notes:
+          - {text: "bei M\xE4nnern", type: indicator}
+          text: his
+        - language: en
+          notes:
+          - {text: "bei M\xE4dchen", type: indicator}
+          text: her
+        - language: en
+          notes:
+          - {text: 'bei Dingen, Abstrakta', type: indicator}
+          text: its
+        - language: en
+          notes:
+          - {text: bei Tieren, type: indicator}
+          text: its
+        - language: en
+          notes:
+          - {text: "bei M\xE4nnchen auch", type: indicator}
+          text: his
+        - language: en
+          notes:
+          - {text: bei Weibchen auch, type: indicator}
+          text: her
+        - language: en
+          notes:
+          - {text: "bei L\xE4ndern", type: indicator}
+          text: its
+        - {language: en, text: her}
+        - language: en
+          notes:
+          - {text: "bei St\xE4dten", type: indicator}
+          text: its
+        - language: en
+          notes:
+          - {text: bei Schiffen, type: indicator}
+          text: her
+        - {language: en, text: its}
+        - language: en
+          notes:
+          - {text: nach man1, type: indicator}
+          text: one's
+        - language: en
+          regions: [US]
+          text: his
+    language: de
+    lexicalCategory: Pronoun
+    text: sein
+  - entries:
+    - homographNumber: '300'
+      notes:
+      - {text: Gen.der Personalpronomen, type: grammaticalNote}
+      senses:
+      - crossReferences:
+        - {id: seiner, text: seiner, type: related}
+        id: b-de-en0037326.002
+        registers: [literary, archaic]
+    language: de
+    lexicalCategory: Other
+    text: sein
+  - entries:
+    - grammaticalFeatures:
+      - {text: Neuter, type: Gender}
+      homographNumber: '500'
+      senses:
+      - domains: [Philosophy]
+        examples:
+        - text: Sein und Schein
+          translations:
+          - {language: en, text: appearance and reality}
+        id: b-de-en0037327.002
+        translations:
+        - {language: en, text: being}
+        - language: en
+          notes:
+          - {text: Dasein, type: indicator}
+          text: existence
+    language: de
+    lexicalCategory: Noun
+    text: Sein
+  type: headword
+  word: sein

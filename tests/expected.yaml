@@ -1,0 +1,40 @@
+searches:
+  - result_set:
+      len: 42
+      fields:
+        len: 6
+entries:
+  - lex_ents:
+      len: 1
+      0:
+        example_sets:
+          len: 4
+        translation_set:
+          fields:
+            len: 9
+  - lex_ents:
+      len: 4
+      0:
+        example_sets:
+          len: 74
+        translation_set:
+          fields:
+            len: 6
+      1:
+        example_sets:
+          len: 13
+        translation_set:
+          fields:
+            len: 4
+      2:
+        example_sets:
+          len: 0
+        translation_set:
+          fields:
+            len: 0
+      3:
+        example_sets:
+          len: 1
+        translation_set:
+          fields:
+            len: 2

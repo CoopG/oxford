@@ -8,6 +8,8 @@ requests = "*"
 ipython = "*"
 pudb = "*"
 termcolor = "*"
+pyyaml = "*"
+dpath = "*"
 
 [dev-packages]
 

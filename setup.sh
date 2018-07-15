@@ -26,7 +26,7 @@ export DJANGO_PASS=$DJANGO_PASS
 # args
 export entry=\$1
 
-ipython -i oxford.ipy
+ipython -i oxford/oxford.ipy
 EOF
 
 chmod u=rwx .de.sh

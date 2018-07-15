@@ -1,0 +1,11 @@
+metadata: {limit: 5000, offset: 0, provider: Oxford University Press, sourceLanguage: de, total: 6}
+results:
+  - {id: prufung, matchString: prufun, matchType: fuzzy, score: 5.2965612, word: "Pr\xFC\
+      fung"}
+  - {id: prufen, matchString: prufun, matchType: fuzzy, score: 5.2965612, word: "pr\xFC\
+      fen"}
+  - {id: profund, matchString: prufun, matchType: fuzzy, score: 5.2965612, word: profund}
+  - {id: profan, matchString: prufun, matchType: fuzzy, score: 5.2965612, word: profan}
+  - {id: rufen, matchString: prufun, matchType: fuzzy, score: 4.7669063, word: rufen}
+  - {id: prufer, matchString: prufun, matchType: fuzzy, score: 1.7655206, word: "Pr\xFC\
+      fer"}
